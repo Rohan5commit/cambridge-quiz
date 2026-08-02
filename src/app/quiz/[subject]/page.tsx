@@ -111,7 +111,7 @@ export default function QuizPage() {
         <div className="flex justify-center mb-8">
           <Timer
             key={currentQuestionIndex}
-            duration={10}
+            duration={15}
             onTimeUp={handleTimeUp}
             color={subject.color}
             isPaused={isAnswered}

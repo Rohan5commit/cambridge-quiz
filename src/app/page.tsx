@@ -41,7 +41,7 @@ export default function Home() {
             >
               {subject.name}
             </h2>
-            <p className="text-gray-600">10 Questions • 10 Seconds Each</p>
+            <p className="text-gray-600">10 Questions • 15 Seconds Each</p>
             <div
               className="mt-4 inline-block px-6 py-2 rounded-full text-white font-semibold transition-all duration-300 group-hover:shadow-lg"
               style={{ backgroundColor: subject.color }}
