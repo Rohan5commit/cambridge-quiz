@@ -50,10 +50,10 @@ export const questions: Record<string, Question[]> = {
   science: [
     { id: 1, type: 'multiple-choice', question: 'What planet is known as the Red Planet?', options: ['Venus', 'Mars', 'Jupiter', 'Saturn'], correctAnswer: 'Mars' },
     { id: 2, type: 'true-false', question: 'Water boils at 100 degrees Celsius at sea level.', correctAnswer: 'true' },
-    { id: 3, type: 'multiple-choice', question: 'What is the chemical symbol for water?', options: ['O2', 'CO2', 'H2O', 'NaCl'], correctAnswer: 'H2O' },
+    { id: 3, type: 'multiple-choice', question: 'Which organ pumps blood around the human body?', options: ['Brain', 'Lungs', 'Heart', 'Liver'], correctAnswer: 'Heart' },
     { id: 4, type: 'short-answer', question: 'What gas do plants absorb from the air during photosynthesis?', correctAnswer: ['carbon dioxide', 'CO2', 'co2'] },
     { id: 5, type: 'true-false', question: 'The Earth revolves around the Sun.', correctAnswer: 'true' },
-    { id: 6, type: 'multiple-choice', question: 'Which layer of the atmosphere do we live in?', options: ['Stratosphere', 'Troposphere', 'Mesosphere', 'Thermosphere'], correctAnswer: 'Troposphere' },
+    { id: 6, type: 'multiple-choice', question: 'What type of energy does the Sun provide to the Earth?', options: ['Kinetic energy', 'Chemical energy', 'Light energy', 'Sound energy'], correctAnswer: 'Light energy' },
     { id: 7, type: 'short-answer', question: 'What is the powerhouse of the cell?', correctAnswer: ['mitochondria', 'the mitochondria'] },
     { id: 8, type: 'true-false', question: 'Sound travels faster in water than in air.', correctAnswer: 'true' },
     { id: 9, type: 'multiple-choice', question: 'What type of rock is formed by volcanic activity?', options: ['Sedimentary', 'Metamorphic', 'Igneous', 'Limestone'], correctAnswer: 'Igneous' },
