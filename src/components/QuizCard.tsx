@@ -148,13 +148,19 @@ export default function QuizCard({
             </button>
           )}
           {isAnswered && (
-            <div className="p-4 rounded-xl bg-blue-50 border border-blue-200">
-              <p className="text-blue-700">
+            <div className={`p-4 rounded-xl border-2 ${
+              selectedAnswer && isCorrect(selectedAnswer)
+                ? 'bg-green-50 border-green-500'
+                : 'bg-red-50 border-red-500'
+            }`}>
+              <p className={selectedAnswer && isCorrect(selectedAnswer) ? 'text-green-700' : 'text-red-700'}>
                 <span className="font-medium">Your answer:</span> {selectedAnswer || 'No answer'}
               </p>
-              <p className="text-blue-700">
-                <span className="font-medium">Correct answer:</span> {getCorrectAnswerDisplay()}
-              </p>
+              {!(selectedAnswer && isCorrect(selectedAnswer)) && (
+                <p className="text-green-700">
+                  <span className="font-medium">Correct answer:</span> {getCorrectAnswerDisplay()}
+                </p>
+              )}
             </div>
           )}
         </div>

@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useCallback } from 'react';
 import { useRouter, useParams } from 'next/navigation';
-import { questions, subjects, Question } from '@/data/questions';
+import { questions, subjects } from '@/data/questions';
 import Timer from '@/components/Timer';
 import QuizCard from '@/components/QuizCard';
 
@@ -119,6 +119,7 @@ export default function QuizPage() {
         </div>
         
         <QuizCard
+          key={currentQuestion.id}
           question={currentQuestion}
           onAnswer={handleAnswer}
           selectedAnswer={answers[currentQuestionIndex]}
